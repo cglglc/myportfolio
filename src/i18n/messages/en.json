@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Hi, I'm Nağme Çağla Gölcü",
+    "subtitle": "Computer Engineering graduate working with ASP.NET, C#, SQL, and modern web technologies, with a focus on software development, requirements analysis, and system design.",
+    "cta": "View My Projects"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

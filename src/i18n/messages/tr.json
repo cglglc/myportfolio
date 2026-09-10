@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Merhaba, ben Nağme Çağla Gölcü",
+    "subtitle": "ASP.NET, C#, SQL ve modern web teknolojileriyle çalışan; yazılım geliştirme, gereksinim analizi ve sistem tasarımına odaklanan bir bilgisayar mühendisiyim.",
+    "cta": "Projelerimi Gör"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  }
+}

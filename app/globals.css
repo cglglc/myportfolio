@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --background: #08132e;
+  --foreground: #f3e9ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #e7c8ff;
+  color: #08132e;
+}
+
+@layer components {
+  .section-shell {
+    @apply border-t border-[#e8c9ef]/15 bg-[#07112b] px-5 py-16 md:px-6 md:py-24;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .section-kicker {
+    @apply text-sm font-semibold uppercase tracking-[0.3em] text-[#e8c9ef];
+  }
+
+  .section-title {
+    @apply mt-4 [font-family:var(--font-display)] text-[clamp(2.2rem,4.8vw,3.8rem)] font-semibold leading-[1.02] text-[#f4e9ff];
+  }
+
+  .glass-card {
+    @apply relative rounded-[2rem] border border-[#e8c9ef]/18 bg-[#111a3d]/85 p-6 text-[#f4e9ff] shadow-2xl shadow-[#020718]/25;
+  }
+
+  .soft-card {
+    @apply rounded-[2rem] border border-[#e8c9ef]/20 bg-[#e8c9ef]/10 p-6 text-[#f4e9ff];
+  }
+
+  .tag-pill {
+    @apply rounded-full bg-[#e8c9ef]/10 px-3 py-1 text-xs text-[#f0d4ff];
+  }
+
+  .primary-button {
+    @apply rounded-full bg-[#d8a8bd] px-6 py-3 font-semibold text-[#07112b] transition hover:bg-[#cbb7ff];
+  }
+
+  .pink-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-[#e8c9ef]/55 to-transparent;
+  }
+
+  .tiny-star {
+    @apply text-[#e8c9ef]/80;
+  }
+
+  .corner-glow {
+    @apply pointer-events-none absolute right-0 top-0 h-24 w-24 rounded-full bg-[#e8c9ef]/10 blur-2xl;
+  }
+}
+
+@keyframes aurora-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(3%, -2%, 0) rotate(4deg);
+  }
+}
+
+@keyframes soft-pulse {
+  0%, 100% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.animate-aurora-drift {
+  animation: aurora-drift 12s ease-in-out infinite;
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 5s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-in {
+  animation: fade-up 700ms ease both;
+}
+
+.reveal-on-scroll {
+  animation: fade-up both;
+  animation-timeline: view();
+  animation-range: entry 8% cover 28%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-page-in,
+  .reveal-on-scroll,
+  .animate-aurora-drift,
+  .animate-soft-pulse {
+    animation: none;
+  }
+}
