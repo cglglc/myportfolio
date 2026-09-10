@@ -104,8 +104,8 @@ async function main() {
       {
         titleTr: "Portfolyo Sitesi",
         titleEn: "Portfolio Website",
-        descTr: "Next.js, Tailwind, Prisma, Supabase ve Gemini destekli AI bölümüyle geliştirilen kişisel portfolyo sitesi.",
-        descEn: "A personal portfolio website built with Next.js, Tailwind, Prisma, Supabase, and a Gemini-powered AI section.",
+        descTr: "Next.js ve TypeScript ile geliştirilen, modern ve responsive bir kişisel portfolyo platformu. Proje ve sertifika içerikleri Prisma ORM üzerinden Supabase PostgreSQL veritabanından dinamik olarak yönetiliyor; iletişim formu gelen mesajları veritabanına kaydediyor. next-intl ile Türkçe ve İngilizce dil desteği sunan site, Gemini tabanlı AI Portfolyo Konsolu sayesinde ziyaretçilerin projeler, teknik yetkinlikler ve deneyimler hakkında etkileşimli sorular sormasına olanak tanıyor. Proje detay sayfalarında GitHub, canlı proje, YouTube, sunum ve PDF bağlantıları destekleniyor.",
+        descEn: "A modern and responsive personal portfolio platform built with Next.js and TypeScript. Project and certificate content is managed dynamically through Prisma ORM and a Supabase PostgreSQL database, while the contact form stores incoming messages in the database. The site supports Turkish and English with next-intl and includes a Gemini-powered AI Portfolio Console that allows visitors to ask interactive questions about projects, technical skills, and experience. Project detail pages support GitHub, live project, YouTube, presentation, and PDF resources.",
         tech: ["Next.js", "TypeScript", "Tailwind", "Prisma", "Supabase", "Gemini"],
         githubUrl: "https://github.com/cglglc/myportfolio",
         liveUrl: null,
