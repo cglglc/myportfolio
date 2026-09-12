@@ -21,7 +21,7 @@ export default async function HomePage({
   return (
     <main className="min-h-screen overflow-hidden bg-[#07112b] text-[#f4e9ff]">
       <Navbar />
-      <section id="hero" className="animate-page-in relative flex min-h-screen items-center px-5 pb-16 pt-28 md:px-6 md:pt-32">
+      <section id="hero" className="animate-page-in relative flex min-h-screen items-center px-5 pb-16 pt-36 md:px-6 md:pt-32">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_26%,rgba(232,201,239,0.34),transparent_26%),radial-gradient(circle_at_74%_40%,rgba(151,133,204,0.25),transparent_30%),radial-gradient(circle_at_18%_76%,rgba(244,218,245,0.16),transparent_28%),linear-gradient(180deg,#07112b_0%,#111a3d_52%,#07112b_100%)]" />
         <div className="absolute inset-x-0 top-14 -z-10 mx-auto h-[34rem] max-w-5xl rounded-full bg-[#e8c9ef]/10 blur-3xl" />
 
@@ -30,11 +30,11 @@ export default async function HomePage({
             <span>{locale === "en" ? "Portfolio" : "Portfolyo"}</span>
           </aside>
 
-          <div className="relative overflow-hidden rounded-[2.8rem] border border-[#e8c9ef]/18 bg-[#111a3d]/70 p-6 shadow-2xl shadow-[#020718]/30 backdrop-blur md:p-10">
+          <div className="relative min-w-0 overflow-hidden rounded-[2.8rem] border border-[#e8c9ef]/18 bg-[#111a3d]/70 p-6 shadow-2xl shadow-[#020718]/30 backdrop-blur md:p-10">
             <div className="absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-[#e8c9ef]/18 blur-3xl" />
             <div className="absolute -bottom-20 right-12 h-56 w-56 rounded-full bg-[#e8c9ef]/8 blur-2xl" />
 
-            <p className="relative mb-6 inline-flex rounded-full border border-[#e8c9ef]/25 bg-[#e8c9ef]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#f0d4ff]">
+            <p className="relative mb-6 inline-flex max-w-full whitespace-nowrap rounded-full border border-[#e8c9ef]/25 bg-[#e8c9ef]/10 px-2 py-1 text-[clamp(6px,1.9vw,10px)] font-semibold uppercase leading-3 tracking-[0.06em] text-[#f0d4ff] sm:px-3 sm:py-1.5 sm:tracking-[0.12em]">
               Requirements Analysis • Agile • SDLC • ASP.NET Core • C# • SQL
             </p>
 
@@ -64,7 +64,7 @@ export default async function HomePage({
             </div>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="grid min-w-0 gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {[
               ["19+", locale === "en" ? "Skills" : "Yetenek"],
               ["TR/EN", locale === "en" ? "Language" : "Dil"],

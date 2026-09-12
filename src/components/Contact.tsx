@@ -80,7 +80,7 @@ export default function Contact({ locale }: ContactProps) {
                   <span className="block text-xs font-semibold uppercase tracking-[0.22em] text-[#cbb7e8]">
                     Email
                   </span>
-                  <span className="mt-1 block text-sm text-[#ffffff] group-hover:text-[#cbb7ff]">
+                  <span className="mt-1 block break-all text-sm text-[#ffffff] group-hover:text-[#cbb7ff]">
                     golcucagla@gmail.com
                   </span>
                 </span>

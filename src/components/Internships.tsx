@@ -40,12 +40,12 @@ export default function Internships({ locale }: InternshipsProps) {
     <section className="section-shell">
       <div className="section-inner">
         <p className="section-kicker">
-          {locale === "en" ? "Experience" : "Deneyim"}
+          {locale === "en" ? "Experience" : "Deneyimler"}
         </p>
 
         <div className="relative mt-10 space-y-6 pl-8 before:absolute before:left-2 before:top-3 before:h-[calc(100%-1.5rem)] before:w-px before:bg-[#e8c9ef]/25 md:pl-12 md:before:left-3">
           {internships.map((item) => (
-            <article key={item.company} className="relative glass-card overflow-hidden">
+              <article key={item.company} className="relative min-w-0 glass-card overflow-hidden">
               <div className="corner-glow" />
               <div className="absolute -left-[2.15rem] top-7 flex h-5 w-5 items-center justify-center rounded-full border border-[#e8c9ef]/60 bg-[#07112b] md:-left-[3.15rem]">
                 <span className="h-2 w-2 rounded-full bg-[#e8c9ef]" />
@@ -53,7 +53,7 @@ export default function Internships({ locale }: InternshipsProps) {
 
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold leading-snug text-[#f4e9ff] md:text-xl">
+                  <h3 className="break-words text-lg font-semibold leading-snug text-[#f4e9ff] md:text-xl">
                     {item.company}
                   </h3>
                   <p className="mt-1 text-sm text-[#e8c9ef]">

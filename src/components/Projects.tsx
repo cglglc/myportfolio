@@ -47,7 +47,7 @@ export default async function Projects({ locale }: ProjectsProps) {
               <Link
                 key={project.id}
                 href={`/${locale}/projects/${project.id}`}
-                className="group relative flex min-h-64 flex-col overflow-hidden rounded-[2rem] border border-[#e8c9ef]/18 bg-[#111a3d]/85 p-5 text-[#f4e9ff] shadow-2xl shadow-[#020718]/25 transition hover:-translate-y-1 hover:border-[#e8c9ef]/45"
+                className="group relative flex min-h-64 min-w-0 flex-col overflow-hidden rounded-[2rem] border border-[#e8c9ef]/18 bg-[#111a3d]/85 p-5 text-[#f4e9ff] shadow-2xl shadow-[#020718]/25 transition hover:-translate-y-1 hover:border-[#e8c9ef]/45"
               >
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#e8c9ef]/70 to-transparent opacity-60" />
                 <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#e8c9ef]/10 blur-2xl transition group-hover:bg-[#e8c9ef]/20" />

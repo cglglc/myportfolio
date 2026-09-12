@@ -77,7 +77,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             <p className="section-kicker">
               {locale === "en" ? "Project Detail" : "Proje Detayı"}
             </p>
-            <h1 className="mt-5 max-w-4xl [font-family:var(--font-display)] text-[clamp(3.2rem,8vw,6.8rem)] font-semibold leading-[0.9] tracking-tight">
+            <h1 className="mt-5 max-w-4xl break-words [font-family:var(--font-display)] text-[clamp(3rem,8vw,6.8rem)] font-semibold leading-[0.9] tracking-tight">
               {locale === "en" ? project.titleEn : project.titleTr}
             </h1>
           </div>
