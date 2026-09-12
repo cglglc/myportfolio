@@ -61,7 +61,7 @@ export default function Internships({ locale }: InternshipsProps) {
                   </p>
                 </div>
 
-                <div className="rounded-full border border-[#e8c9ef]/15 bg-[#e8c9ef]/10 px-4 py-2 text-sm text-[#f0d4ff] md:text-right">
+                <div className="max-w-full rounded-full border border-[#e8c9ef]/15 bg-[#e8c9ef]/10 px-4 py-2 text-sm leading-5 text-[#ffffff] md:text-right">
                   {item.location} · {locale === "en" ? item.dateEn : item.dateTr}
                 </div>
               </div>

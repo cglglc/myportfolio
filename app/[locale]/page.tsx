@@ -21,7 +21,7 @@ export default async function HomePage({
   return (
     <main className="min-h-screen overflow-hidden bg-[#07112b] text-[#f4e9ff]">
       <Navbar />
-      <section className="animate-page-in relative flex min-h-screen items-center px-5 pb-16 pt-28 md:px-6 md:pt-32">
+      <section id="hero" className="animate-page-in relative flex min-h-screen items-center px-5 pb-16 pt-28 md:px-6 md:pt-32">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_26%,rgba(232,201,239,0.34),transparent_26%),radial-gradient(circle_at_74%_40%,rgba(151,133,204,0.25),transparent_30%),radial-gradient(circle_at_18%_76%,rgba(244,218,245,0.16),transparent_28%),linear-gradient(180deg,#07112b_0%,#111a3d_52%,#07112b_100%)]" />
         <div className="absolute inset-x-0 top-14 -z-10 mx-auto h-[34rem] max-w-5xl rounded-full bg-[#e8c9ef]/10 blur-3xl" />
 
@@ -71,9 +71,9 @@ export default async function HomePage({
               ["3", locale === "en" ? "Internships" : "Staj"],
               ["2026", locale === "en" ? "Graduate" : "Mezuniyet"],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-[1.5rem] border border-[#e8c9ef]/18 bg-[#e8c9ef]/10 p-5 backdrop-blur">
-                <p className="[font-family:var(--font-display)] text-4xl font-semibold leading-none text-[#e8c9ef]">{value}</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#cbb7e8]">{label}</p>
+              <div key={label} className="min-w-0 rounded-[1.5rem] border border-[#e8c9ef]/18 bg-[#e8c9ef]/10 p-5 backdrop-blur">
+                <p className="[font-family:var(--font-display)] text-4xl font-semibold leading-none text-[#f4e9ff]">{value}</p>
+                <p className="mt-2 break-words text-xs font-semibold uppercase leading-5 tracking-[0.16em] text-[#ffffff]">{label}</p>
               </div>
             ))}
           </div>

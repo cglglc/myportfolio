@@ -9,8 +9,8 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-[#e8c9ef]/15 bg-[#07112b]/75 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href={`/${locale}`} className="[font-family:var(--font-display)] text-xl font-semibold tracking-[0.08em] text-[#f4e9ff]">
-          N. Çağla Gölcü
+        <Link href={`/${locale}#hero`} className="[font-family:var(--font-display)] text-sm font-semibold tracking-[0.03em] text-[#f4e9ff] sm:text-xl sm:tracking-[0.06em]">
+          Nağme Çağla Gölcü
         </Link>
 
         <div className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-[#cbb7e8] md:flex">

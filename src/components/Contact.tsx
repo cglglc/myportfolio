@@ -54,7 +54,7 @@ export default function Contact({ locale }: ContactProps) {
           {locale === "en" ? "Contact" : "İletişim"}
         </p>
 
-        <div className="glass-card mt-6 md:p-10">
+        <div className="glass-card mt-6 bg-[#18244b]/85 md:p-10">
           <div className="corner-glow" />
 
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
@@ -62,25 +62,25 @@ export default function Contact({ locale }: ContactProps) {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#cbb7e8]">
                 {locale === "en" ? "Direct Links" : "Direkt Ulaşım"}
               </p>
-              <p className="mt-5 max-w-md text-base leading-7 text-[#d9cdea]">
+              <p className="mt-5 max-w-md text-base leading-7 text-[#ffffff]">
               {locale === "en"
                 ? "For roles, projects, or collaboration ideas, you can reach me directly or send a short message through the form."
                 : "İş fırsatları, projeler veya iş birliği fikirleri için bana direkt ulaşabilir ya da form üzerinden kısa bir mesaj bırakabilirsin."}
               </p>
 
-              <div className="mt-8 space-y-3">
+              <div className="mt-8">
               <a
                 href="mailto:golcucagla@gmail.com"
-                className="group flex items-center gap-4 rounded-3xl border border-[#e8c9ef]/18 bg-[#e8c9ef]/10 p-4 transition hover:-translate-y-1 hover:border-[#cbb7ff]/45 hover:bg-[#cbb7ff]/12"
+                className="group flex items-center gap-4 border-b border-[#e8c9ef]/18 py-4 transition hover:border-[#cbb7ff]/60"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#e8c9ef]/12 text-lg font-semibold text-[#e8c9ef] transition group-hover:bg-[#e8c9ef] group-hover:text-[#07112b]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#e8c9ef]/25 text-lg font-semibold text-[#e8c9ef] transition group-hover:border-[#cbb7ff] group-hover:text-[#cbb7ff]">
                   @
                 </span>
                 <span>
                   <span className="block text-xs font-semibold uppercase tracking-[0.22em] text-[#cbb7e8]">
                     Email
                   </span>
-                  <span className="mt-1 block text-sm text-[#f4e9ff] group-hover:text-[#e8c9ef]">
+                  <span className="mt-1 block text-sm text-[#ffffff] group-hover:text-[#cbb7ff]">
                     golcucagla@gmail.com
                   </span>
                 </span>
@@ -93,9 +93,9 @@ export default function Contact({ locale }: ContactProps) {
                 href="https://github.com/cglglc"
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-4 rounded-3xl border border-[#e8c9ef]/18 bg-[#e8c9ef]/10 p-4 transition hover:-translate-y-1 hover:border-[#cbb7ff]/45 hover:bg-[#cbb7ff]/12"
+                className="group flex items-center gap-4 border-b border-[#e8c9ef]/18 py-4 transition hover:border-[#cbb7ff]/60"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#e8c9ef]/12 text-[#e8c9ef] transition group-hover:bg-[#e8c9ef] group-hover:text-[#07112b]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#e8c9ef]/25 text-[#e8c9ef] transition group-hover:border-[#cbb7ff] group-hover:text-[#cbb7ff]">
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ export default function Contact({ locale }: ContactProps) {
                   <span className="block text-xs font-semibold uppercase tracking-[0.22em] text-[#cbb7e8]">
                     GitHub
                   </span>
-                  <span className="mt-1 block text-sm text-[#f4e9ff] group-hover:text-[#e8c9ef]">
+                  <span className="mt-1 block text-sm text-[#ffffff] group-hover:text-[#cbb7ff]">
                     github.com/cglglc
                   </span>
                 </span>
@@ -132,7 +132,7 @@ export default function Contact({ locale }: ContactProps) {
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#cbb7e8]">
                   {locale === "en" ? "Message" : "Mesaj"}
                 </p>
-                <p className="mt-2 text-sm text-[#d9cdea]">
+                <p className="mt-2 text-sm text-[#ffffff]">
                   {locale === "en" ? "Leave a short note below." : "Kısa bir not bırakabilirsin."}
                 </p>
               </div>
@@ -146,7 +146,7 @@ export default function Contact({ locale }: ContactProps) {
                 name="name"
                 required
                 placeholder={locale === "en" ? "Your name" : "Adın"}
-                className="rounded-full border border-[#e8c9ef]/14 bg-[#e8c9ef]/10 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#a894bf] focus:border-[#cbb7ff]/60 focus:bg-[#e8c9ef]/14"
+                className="rounded-full border border-[#e8c9ef]/18 bg-[#26335c]/65 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#b9a8cc] focus:border-[#cbb7ff]/60 focus:bg-[#cbb7ff]/12"
               />
 
               <input
@@ -154,7 +154,7 @@ export default function Contact({ locale }: ContactProps) {
                 type="email"
                 required
                 placeholder={locale === "en" ? "Email address" : "E-posta adresin"}
-                className="rounded-full border border-[#e8c9ef]/14 bg-[#e8c9ef]/10 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#a894bf] focus:border-[#cbb7ff]/60 focus:bg-[#e8c9ef]/14"
+                className="rounded-full border border-[#e8c9ef]/18 bg-[#26335c]/65 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#b9a8cc] focus:border-[#cbb7ff]/60 focus:bg-[#cbb7ff]/12"
               />
             </div>
 
@@ -163,7 +163,7 @@ export default function Contact({ locale }: ContactProps) {
               required
               rows={7}
               placeholder={locale === "en" ? "Your message" : "Mesajın"}
-              className="resize-none rounded-[1.6rem] border border-[#e8c9ef]/14 bg-[#e8c9ef]/10 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#a894bf] focus:border-[#cbb7ff]/60 focus:bg-[#e8c9ef]/14"
+              className="resize-none rounded-[1.6rem] border border-[#e8c9ef]/18 bg-[#26335c]/65 px-5 py-4 text-[#f4e9ff] outline-none transition placeholder:text-[#b9a8cc] focus:border-[#cbb7ff]/60 focus:bg-[#cbb7ff]/12"
             />
 
             <button
